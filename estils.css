@@ -115,3 +115,8 @@ body {
     display: inline-block;
     transition: 0.25s ease;
 }
+.draw {
+    padding: 178px 0 188px;
+    background-color: black;
+    color: white;
+}
