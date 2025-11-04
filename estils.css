@@ -134,7 +134,8 @@ body {
 	margin-top: 44px;
 	margin-bottom: 8px;
 	margin-right: auto;
-	margin-left: auto
+	margin-left: auto;
+	
 }
 
 .artwork__image {
@@ -258,7 +259,7 @@ body {
 
 .draw .cards__item {
 	overflow: hidden;
-	background-color: #1d1c1f
+	background-color: black
 }
 
 .draw .cards__item:nth-child(1),
@@ -326,4 +327,12 @@ body {
 
 .draw .cards__item:nth-child(n+3) {
 	margin-top: 30px
+}
+.draw {
+	background-color: black;
+}
+.icono {
+  width: 100px !important;
+  height: auto !important;
+  flex-shrink: 0; /* evita que flex la estire */
 }
