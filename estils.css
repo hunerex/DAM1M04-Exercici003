@@ -108,14 +108,4 @@ body {
     display: inline-block;
     transition: 0.25s ease;
 }
-.draw {
-    padding: 178px 0 188px;
-    background-color: black;
-    color: white;
-}
-.icono {
-  width: 100px !important;
-  height: auto !important;
-  flex-shrink: 0;
-  display: inline-block;
-}
+
