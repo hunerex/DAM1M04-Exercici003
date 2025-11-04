@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family:"Inter", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
     background: #fff;
     color: #111;
     text-align: center;
@@ -66,6 +66,13 @@ body {
     font-weight: 500;
 }
 
+/* Contenedor para ajustar el ancho */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 /* Hero */
 .hero {
     padding: 40px 0 10px;
@@ -108,7 +115,6 @@ body {
     display: inline-block;
     transition: 0.25s ease;
 }
-<<<<<<< HEAD
 .draw {
     padding: 178px 0 188px;
     background-color: black;
@@ -321,6 +327,3 @@ body {
 .draw .cards__item:nth-child(n+3) {
 	margin-top: 30px
 }
-=======
-
->>>>>>> 0e8da55b0c359c2622f6a94e91a1f688b60f0265
