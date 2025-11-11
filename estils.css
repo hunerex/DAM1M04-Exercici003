@@ -375,4 +375,14 @@ body {
 .tools__item:nth-child(odd) {
     padding-right: 49px;
 }
+.design .cards__item:nth-child(1) {
+    overflow: hidden;
+    display: flexs;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.design .cards__item {
+    background-color: #efefef;
+}
 
