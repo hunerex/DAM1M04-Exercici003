@@ -390,4 +390,12 @@ body {
 .design .cards__item {
     background-color: #efefef;
 }
+.design .cards__item:nth-child(2) {
+    overflow: hidden;
+    position: relative;
+    width: calc(58.15% - 15px);
+    color: var(--white);
+    background-color: #2f434b;
+}
+
 
