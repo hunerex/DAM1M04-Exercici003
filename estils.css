@@ -113,6 +113,10 @@ body {
 }
 
 
+
+
+
+
 @media only screen and (min-width: 100px)and (max-width: 1135px) {
 	.wrapper {
 		padding: 0 20px
@@ -173,7 +177,7 @@ body {
 
 .cards__item-description {
 	margin-top: 6px;
-	opacity: .77
+	opacity: .77;
 }
 
 .tools {
@@ -192,6 +196,7 @@ body {
 	margin-left: auto
 }
 
+
 .tools__description {
 	max-width: 680px;
 	margin-top: 23px;
@@ -201,6 +206,30 @@ body {
 	letter-spacing: -0.001em;
 	opacity: .7
 }
+.tools__more {
+	margin-top: 118px;
+	color: var(--accent-blue);
+	font-weight: 500;
+	text-align: center;
+	transition: color 130ms ease-in-out
+}
+
+.hover .tools__more:hover {
+	color: var(--accent-blue--hover)
+}
+
+.tools__more-link {
+	display: inline-flex;
+	align-items: center
+}
+
+.tools__more svg {
+	margin-right: 10px
+}
+
+.tools__more svg path {
+	fill: currentColor
+}	
 
 .cards {
 	display: flex;
@@ -221,7 +250,7 @@ body {
 
 .cards__item-description {
 	margin-top: 6px;
-	opacity: .70
+	opacity: .77
 }
 .draw {
 	padding: 178px 0 188px;
@@ -322,8 +351,10 @@ body {
 .draw {
 	background-color: black;
 }
+
 .icono {
   width: 100px !important;
   height: auto !important;
   flex-shrink: 0; /* evita que flex la estire */
 }
+
