@@ -244,8 +244,13 @@ body {
 }
 
 .cards__item-info {
-	box-sizing: border-box;
-	padding: 70px
+    box-sizing: border-box;
+    padding: 70px;
+
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    text-align: left;        
 }
 
 .cards__item-description {
@@ -377,7 +382,7 @@ body {
 }
 .design .cards__item:nth-child(1) {
     overflow: hidden;
-    display: flexs;
+    display: flex;
     justify-content: space-between;
     padding-top: 50px;
 }
