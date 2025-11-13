@@ -397,3 +397,15 @@ body {
     color: var(--white);
     background-color: #2f434b;
 }
+
+.workspace__showcase-image {
+    display: none;
+}
+.workspace__showcase-image.is-active {
+    display: block;
+}
+.workspace__showcase-link.is-active {
+    font-weight: bold;
+    color: #007aff;
+    text-decoration: underline;
+}

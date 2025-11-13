@@ -186,41 +186,75 @@
               <img src="/exerciciPixelmator/img_hero--top.png">
             </picture>
 </body>
-</html>
-<section class="pro__workspace workspace">
-
-  <div class="workspace__wrapper wrapper">
-    <header class="workspace__header">
-      <h2 class="workspace__title type-xl">Choose a workspace that works for you.</h2>
-      <p class="workspace__description type-m">
-        Customize the Pixelmator Pro workspace to make it work for you — move the Tools and Layers sidebars wherever you want and completely customize the list of tools. Or choose one of the built-in presets created especially for photographers, designers, painters, and illustrators.
-      </p>
-    </header>
-
-    <div class="workspace__showcase showcase">
-      <figure class="workspace__showcase-artwork showcase__artwork">
-        <picture class="workspace__showcase-image showcase__image is-active">
-          <img src="exerciciPixelmator/imagen1.png" width="1280" height="769">
-        </picture>
-        <picture class="workspace__showcase-image showcase__image">
-          <img src="exerciciPixelmator/imagen2.png" width="1280" height="769">
-        </picture>
-        <picture class="workspace__showcase-image showcase__image">
-          <img src="exerciciPixelmator/imagen3.png" width="1280" height="769">
-        </picture>
-        <picture class="workspace__showcase-image showcase__image">
-          <img src="exerciciPixelmator/imagen4.png" width="1280" height="769">
-        </picture>
-      </figure>
-
-      <nav class="workspace__showcase-nav showcase__nav">
-        <div class="workspace__showcase-nav-wrapper">
-          <a href="#" class="workspace__showcase-link showcase__link is-active">Photography</a>
-          <a href="#" class="workspace__showcase-link showcase__link">Illustration</a>
-          <a href="#" class="workspace__showcase-link showcase__link">Design</a>
-          <a href="#" class="workspace__showcase-link showcase__link">Painting</a>
-        </div>
+</html>    
  
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixelmator Pro</title>
+  <link rel="stylesheet" href="estils.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+
+  <section class="pro__workspace workspace">
+    <div class="workspace__wrapper wrapper">
+      <header class="workspace__header">
+        <h2 class="workspace__title type-xl">Choose a workspace that works for you.</h2>
+        <p class="workspace__description type-m">
+          Customize the Pixelmator Pro workspace to make it work for you — move the Tools and Layers sidebars wherever you want and completely customize the list of tools. Or choose one of the built-in presets created especially for photographers, designers, painters, and illustrators.
+        </p>
+      </header>
+      <div class="workspace__showcase showcase">
+        <figure class="workspace__showcase-artwork showcase__artwork">
+          <picture class="workspace__showcase-image showcase__image is-active">
+            <img src="exerciciPixelmator/imagen1.png" width="1280" height="769">
+          </picture>
+          <picture class="workspace__showcase-image showcase__image">
+            <img src="exerciciPixelmator/imagen2.png" width="1280" height="769">
+          </picture>
+          <picture class="workspace__showcase-image showcase__image">
+            <img src="exerciciPixelmator/imagen3.png" width="1280" height="769">
+          </picture>
+          <picture class="workspace__showcase-image showcase__image">
+            <img src="exerciciPixelmator/imagen4.png" width="1280" height="769">
+          </picture>
+        </figure>
+        <nav class="workspace__showcase-nav showcase__nav">
+          <div class="workspace__showcase-nav-wrapper">
+            <a href="#" class="workspace__showcase-link showcase__link is-active">Photography</a>
+            <a href="#" class="workspace__showcase-link showcase__link">Illustration</a>
+            <a href="#" class="workspace__showcase-link showcase__link">Design</a>
+            <a href="#" class="workspace__showcase-link showcase__link">Painting</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <!-- SCRIPT -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const links = document.querySelectorAll('.workspace__showcase-link');
+      const images = document.querySelectorAll('.workspace__showcase-image');
+      links.forEach((link, index) => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          // Quita la clase activa de todos los enlaces e imágenes
+          links.forEach(l => l.classList.remove('is-active'));
+          images.forEach(img => img.classList.remove('is-active'));
+          // Activa el enlace y la imagen correspondiente
+          link.classList.add('is-active');
+          images[index].classList.add('is-active');
+        });
+      });
+    });
+  </script>
 
 
 
