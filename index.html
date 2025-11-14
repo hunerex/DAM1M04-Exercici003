@@ -185,542 +185,524 @@
         <picture class="templatesHero__imageWrapper">
               <img src="/exerciciPixelmator/img_hero--top.png">
             </picture>
-</body>
-</html>    
- 
-</head>
-<body>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pixelmator Pro</title>
-  <link rel="stylesheet" href="estils.css">
-  <style>
-    
-  </style>
-</head>
-<body>
-
-  <section class="pro__workspace workspace">
-    <div class="workspace__wrapper wrapper">
-      <header class="workspace__header">
-        <h2 class="workspace__title type-xl">Choose a workspace that works for you.</h2>
-        <p class="workspace__description type-m">
-          Customize the Pixelmator Pro workspace to make it work for you — move the Tools and Layers sidebars wherever you want and completely customize the list of tools. Or choose one of the built-in presets created especially for photographers, designers, painters, and illustrators.
-        </p>
-      </header>
-      <div class="workspace__showcase showcase">
-        <figure class="workspace__showcase-artwork showcase__artwork">
-          <picture class="workspace__showcase-image showcase__image is-active">
-            <img src="exerciciPixelmator/imagen1.png" width="1280" height="769">
-          </picture>
-          <picture class="workspace__showcase-image showcase__image">
-            <img src="exerciciPixelmator/imagen2.png" width="1280" height="769">
-          </picture>
-          <picture class="workspace__showcase-image showcase__image">
-            <img src="exerciciPixelmator/imagen3.png" width="1280" height="769">
-          </picture>
-          <picture class="workspace__showcase-image showcase__image">
-            <img src="exerciciPixelmator/im agen4.png" width="1280" height="769">
-          </picture>
-        </figure>
-        <nav class="workspace__showcase-nav showcase__nav">
-          <div class="workspace__showcase-nav-wrapper">
-            <a href="#" class="workspace__showcase-link showcase__link is-active">Photography</a>
-            <a href="#" class="workspace__showcase-link showcase__link">Illustration</a>
-            <a href="#" class="workspace__showcase-link showcase__link">Design</a>
-            <a href="#" class="workspace__showcase-link showcase__link">Painting</a>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </section>
-  <!-- SCRIPT -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const links = document.querySelectorAll('.workspace__showcase-link');
-      const images = document.querySelectorAll('.workspace__showcase-image');
-      links.forEach((link, index) => {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          // Quita la clase activa de todos los enlaces e imágenes
-          links.forEach(l => l.classList.remove('is-active'));
-          images.forEach(img => img.classList.remove('is-active'));
-          // Activa el enlace y la imagen correspondiente
-          link.classList.add('is-active');
-          images[index].classList.add('is-active');
-        });
-      });
-    });
-  </script>
-
-<section class="pro__remove-bg remove-bg">
-      <div class="design__wrapper wrapper">
-        <header class="remove-bg__header">
-          <h2 class="remove-bg__title type-xl"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Elimina el fondo de cualquier imagen con un solo clic.</font></font></h2>
-          <p class="remove-bg__description type-m"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">La asombrosa función Eliminar fondo, impulsada por Core ML, elimina el fondo de cualquier imagen con un solo clic. Mediante una combinación de algoritmos de aprendizaje automático, Pixelmator Pro selecciona automáticamente el sujeto, refina los bordes de la selección y elimina cualquier rastro del fondo anterior de los bordes del objeto.</font></font></p>
+    <section class="pro__workspace workspace">
+      <div class="workspace__wrapper wrapper">
+        <header class="workspace__header">
+          <h2 class="workspace__title type-xl">Choose a workspace that works for you.</h2>
+          <p class="workspace__description type-m">
+            Customize the Pixelmator Pro workspace to make it work for you — move the Tools and Layers sidebars wherever you want and completely customize the list of tools. Or choose one of the built-in presets created especially for photographers, designers, painters, and illustrators.
+          </p>
         </header>
-        <picture class="paint__artwork artwork">
-          <img src="/exerciciPixelmator/img_remove-bg.webp" width="1280" height="769">
-        </picture>
+        <div class="workspace__showcase showcase">
+          <figure class="workspace__showcase-artwork showcase__artwork">
+            <picture class="workspace__showcase-image showcase__image is-active">
+              <img src="exerciciPixelmator/imagen1.png" width="1280" height="769">
+            </picture>
+            <picture class="workspace__showcase-image showcase__image">
+              <img src="exerciciPixelmator/imagen2.png" width="1280" height="769">
+            </picture>
+            <picture class="workspace__showcase-image showcase__image">
+              <img src="exerciciPixelmator/imagen3.png" width="1280" height="769">
+            </picture>
+            <picture class="workspace__showcase-image showcase__image">
+              <img src="exerciciPixelmator/im agen4.png" width="1280" height="769">
+            </picture>
+          </figure>
+          <nav class="workspace__showcase-nav showcase__nav">
+            <div class="workspace__showcase-nav-wrapper">
+              <a href="#" class="workspace__showcase-link showcase__link is-active">Photography</a>
+              <a href="#" class="workspace__showcase-link showcase__link">Illustration</a>
+              <a href="#" class="workspace__showcase-link showcase__link">Design</a>
+              <a href="#" class="workspace__showcase-link showcase__link">Painting</a>
+            </div>
+          </nav>
+        </div>
       </div>
     </section>
-    <section class="pro__ml ml">
-      <div class="ml__wrapper wrapper">
-        <header class="ml__header">
-          <h2 class="ml__title type-xl"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Edición de imágenes impulsada por </font></font><span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">aprendizaje automático</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> .</font></font></h2>
-          <p class="ml__description type-m"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Para ofrecer una edición de imágenes más inteligente, Pixelmator Pro utiliza aprendizaje automático, una tecnología que permite a los ordenadores adquirir conocimientos para realizar tareas específicas de forma más similar a una persona que a un ordenador. Esto nos ha permitido crear funciones que antes eran imposibles.</font></font></p>
+    <!-- SCRIPT -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const links = document.querySelectorAll('.workspace__showcase-link');
+        const images = document.querySelectorAll('.workspace__showcase-image');
+        links.forEach((link, index) => {
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            // Quita la clase activa de todos los enlaces e imágenes
+            links.forEach(l => l.classList.remove('is-active'));
+            images.forEach(img => img.classList.remove('is-active'));
+            // Activa el enlace y la imagen correspondiente
+            link.classList.add('is-active');
+            images[index].classList.add('is-active');
+          });
+        });
+      });
+    </script>
+
+  <section class="pro__remove-bg remove-bg">
+        <div class="design__wrapper wrapper">
+          <header class="remove-bg__header">
+            <h2 class="remove-bg__title type-xl"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Elimina el fondo de cualquier imagen con un solo clic.</font></font></h2>
+            <p class="remove-bg__description type-m"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">La asombrosa función Eliminar fondo, impulsada por Core ML, elimina el fondo de cualquier imagen con un solo clic. Mediante una combinación de algoritmos de aprendizaje automático, Pixelmator Pro selecciona automáticamente el sujeto, refina los bordes de la selección y elimina cualquier rastro del fondo anterior de los bordes del objeto.</font></font></p>
+          </header>
+          <picture class="paint__artwork artwork">
+            <img src="/exerciciPixelmator/img_remove-bg.webp" width="1280" height="769">
+          </picture>
+        </div>
+      </section>
+      <section class="pro__ml ml">
+        <div class="ml__wrapper wrapper">
+          <header class="ml__header">
+            <h2 class="ml__title type-xl"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Edición de imágenes impulsada por </font></font><span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">aprendizaje automático</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> .</font></font></h2>
+            <p class="ml__description type-m"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Para ofrecer una edición de imágenes más inteligente, Pixelmator Pro utiliza aprendizaje automático, una tecnología que permite a los ordenadores adquirir conocimientos para realizar tareas específicas de forma más similar a una persona que a un ordenador. Esto nos ha permitido crear funciones que antes eran imposibles.</font></font></p>
+          </header>
+          <div class="cards">
+            <div class="cards__item">
+              <header class="cards__item-info">
+                <img src="/exerciciPixelmator/img_ml-enhance@2x.png" width="36" height="36">
+                <h6 class="cards__item-title type-s"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Mejora de ML</font></font></h6>
+                <p class="cards__item-description type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Mejora automáticamente tus fotos como un fotógrafo profesional.</font></font></p>
+                <p class="cards__item-link type-xs">
+                </p>
+              </header>
+            </div>
+            <div class="cards__item">
+              <header class="cards__item-info">
+                <img src="/exerciciPixelmator/img_ml-super-resolution@2x.png" width="36" height="36">
+                <h6 class="cards__item-title type-s"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Super Resolución</font></font></h6>
+                <p class="cards__item-description type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Aumenta mágicamente la resolución de las imágenes conservando la nitidez y los detalles.</font></font></p>
+                <p class="cards__item-link type-xs">
+                </p>
+              </header>
+            </div>
+            <div class="cards__item">
+              <header class="cards__item-info">
+                <img src="/exerciciPixelmator/img_ml-match-colors@2x.png" width="36" height="36">
+                <h6 class="cards__item-title type-s"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Combina los colores</font></font></h6>
+                <p class="cards__item-description type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Ajusta rápida y fácilmente los colores y el estilo de cualquier foto.</font></font></p>
+                <p class="cards__item-link type-xs">
+                </p>
+              </header>
+            </div>
+            <div class="cards__item">
+              <header class="cards__item-info">
+                <img src="/exerciciPixelmator/img_ml-denoise@2x.png" width="36" height="36">
+                <h6 class="cards__item-title type-s"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Eliminar ruido</font></font></h6>
+                <p class="cards__item-description type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Elimina sin esfuerzo el ruido de la cámara y los artefactos de compresión de imagen de las fotos.</font></font></p>
+                <p class="cards__item-link type-xs">
+                </p>
+              </header>
+            </div>
+            <div class="cards__item">
+              <header class="cards__item-info">
+                <img src="exerciciPixelmator/img_quick-selection-tool@2x.png" width="36" height="36">
+                <h6 class="cards__item-title type-s"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Herramienta de selección rápida</font></font></h6>
+                <p class="cards__item-description type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Realice selecciones precisas con rapidez y facilidad.</font></font></p>
+                <p class="cards__item-link type-xs">
+                </p>
+              </header>
+            </div>
+            <div class="cards__item">
+              <header class="cards__item-info">
+                <img src="exerciciPixelmator/ico_ml-crop@2x.png" width="36" height="36">
+                <h6 class="cards__item-title type-s"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Cultivo</font></font></h6>
+                <p class="cards__item-description type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Mejora la composición de tus fotos con un solo clic.</font></font></p>
+                <p class="cards__item-link type-xs">
+                </p>
+              </header>
+            </div>
+            <div class="cards__item">
+              <header class="cards__item-info">
+                <img src="exerciciPixelmator/ico_remove-background@2x.png" width="36" height="36">
+                <h6 class="cards__item-title type-s"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Eliminar fondo</font></font></h6>
+                <p class="cards__item-description type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Elimina el fondo de cualquier imagen con un solo clic.</font></font></p>
+              </header>
+            </div>
+            <div class="cards__item">
+              <header class="cards__item-info">
+                <img src="exerciciPixelmator/ico_select-subject@2x.png" width="36" height="36">
+                <h6 class="cards__item-title type-s"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Seleccionar asignatura</font></font></h6>
+                <p class="cards__item-description type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Seleccione automáticamente los sujetos de las imágenes con facilidad.</font></font></p>
+              </header>
+            </div>
+            <div class="cards__item">
+              <header class="cards__item-info">
+                <img src="exerciciPixelmator/img_select-and-mask@2x.png" width="36" height="36">
+                <h6 class="cards__item-title type-s"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Herramienta de selección y máscara</font></font></h6>
+                <p class="cards__item-description type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Realice fácilmente selecciones avanzadas de áreas de imagen complejas como cabello o pelaje.</font></font></p>
+              </header>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pro__repair repair">
+        <div class="repair__wrapper wrapper">
+          <header class="repair__header">
+            <h2 class="repair__title type-xl"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Elimina mágicamente los objetos no deseados.</font></font></h2>
+            <p class="repair__description type-m"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Elimina pequeñas imperfecciones o incluso objetos completos de tus imágenes pintándolos con la herramienta Reparar. No importa la complejidad del fondo, la herramienta Reparar puede hacer desaparecer casi cualquier objeto sin dejar rastro.</font></font></p>
+          </header>
+          <video class="repair__video video-player" width="816" height="510" autoplay="" muted="" playsinline="" loop="">
+            <source src="/exerciciPixelmator/video_repair.mp4" type="video/mp4">
+          </video>
+        </div>
+      </section> 
+    
+      <section class="pro__select select">
+        <div class="select__wrapper wrapper">
+          <header class="select__header">
+            <h2 class="select__title type-xl"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Edita tus fotos una a una. O combina varias fotos en una sola.</font></font></h2>
+            <p class="select__description type-m"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Con una colección de herramientas de selección de precisión píxel, impulsadas por tecnología de vanguardia, Pixelmator Pro te permite seleccionar y editar con facilidad partes específicas de tus imágenes. Así, puedes aplicar ajustes de color y efectos a áreas concretas, seleccionar y copiar objetos de una imagen a otra, o concentrar todas las ediciones en un área precisa sin afectar al resto de la imagen.</font></font></p>
+          </header>
+          <div class="select__showcase showcase">
+            <figure class="select__showcase-artwork showcase__artwork">
+              <picture class="select__showcase-image showcase__image is-active">
+                <img src="/exerciciPixelmator/img-1.png" width="1280" height="769">
+              </picture>
+              <picture class="select__showcase-image showcase__image">
+                <img src="/exerciciPixelmator/img-2.png" width="1280" height="769">
+              </picture>
+              <picture class="select__showcase-image showcase__image">
+                <img src="/exerciciPixelmator/img3.png" width="1280" height="769">
+              </picture>
+              <picture class="select__showcase-image showcase__image">
+                <img src="/exerciciPixelmator/img-4.png" width="1280" height="769">
+              </picture>
+            </figure>
+            <nav class="select__showcase-nav showcase__nav">
+              <div class="select__showcase-nav-wrapper">
+                <a href="#" class="select__showcase-link showcase__link is-active"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Selección rápida</font></font></a>
+                <a href="#" class="select__showcase-link showcase__link"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Selección magnética</font></font></a>
+                <a href="#" class="select__showcase-link showcase__link"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Selección de color</font></font></a>
+                <a href="#" class="select__showcase-link showcase__link"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Selecciones básicas</font></font></a>
+              </div>
+            </nav>
+            <div class="select__showcase-description showcase__description">
+              <p class="showcase__description-item type-xs is-active"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Gracias a su algoritmo avanzado, la herramienta Selección rápida permite seleccionar fácilmente incluso los objetos y áreas más difíciles con tan solo unas pocas pinceladas.</font></font></p>
+              <p class="showcase__description-item type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">La herramienta de selección magnética facilita las selecciones complejas. Simplemente trace los bordes de cualquier objeto y observe cómo se ajusta automáticamente una selección precisa a su alrededor.</font></font></p>
+              <p class="showcase__description-item type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Utilice la herramienta de selección de color para seleccionar de forma rápida y sencilla las partes de su imagen que tengan colores similares.</font></font></p>
+              <p class="showcase__description-item type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Realice selecciones rectangulares o redondeadas, seleccione filas y columnas, dibuje selecciones a mano alzada y mucho más.</font></font></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pro__text text">
+        <header class="text__header">
+          <h2 class="text__title type-xl">Easily design <span>great-looking text.</span></h2>
+          <div class="text__title-artwork">
+            <figure class="text__title-image">
+              <img src="/exerciciPixelmator/img_text@2x.jpg" width="2000" height="auto">
+            </figure>
+          </div>
+          <p class="text__description type-m">Using the powerful Type tools in Pixelmator Pro, you can easily design great-looking text in all your images. Effortlessly create curved text or type along shapes and paths. And use a full set of typography tools to customize text in any way you can imagine.</p>
         </header>
         <div class="cards">
           <div class="cards__item">
             <header class="cards__item-info">
-              <img src="/exerciciPixelmator/img_ml-enhance@2x.png" width="36" height="36">
-              <h6 class="cards__item-title type-s"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Mejora de ML</font></font></h6>
-              <p class="cards__item-description type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Mejora automáticamente tus fotos como un fotógrafo profesional.</font></font></p>
-              <p class="cards__item-link type-xs">
-              </p>
-            </header>
-          </div>
-          <div class="cards__item">
-            <header class="cards__item-info">
-              <img src="/exerciciPixelmator/img_ml-super-resolution@2x.png" width="36" height="36">
-              <h6 class="cards__item-title type-s"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Super Resolución</font></font></h6>
-              <p class="cards__item-description type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Aumenta mágicamente la resolución de las imágenes conservando la nitidez y los detalles.</font></font></p>
-              <p class="cards__item-link type-xs">
-              </p>
-            </header>
-          </div>
-          <div class="cards__item">
-            <header class="cards__item-info">
-              <img src="/exerciciPixelmator/img_ml-match-colors@2x.png" width="36" height="36">
-              <h6 class="cards__item-title type-s"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Combina los colores</font></font></h6>
-              <p class="cards__item-description type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Ajusta rápida y fácilmente los colores y el estilo de cualquier foto.</font></font></p>
-              <p class="cards__item-link type-xs">
-              </p>
-            </header>
-          </div>
-          <div class="cards__item">
-            <header class="cards__item-info">
-              <img src="/exerciciPixelmator/img_ml-denoise@2x.png" width="36" height="36">
-              <h6 class="cards__item-title type-s"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Eliminar ruido</font></font></h6>
-              <p class="cards__item-description type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Elimina sin esfuerzo el ruido de la cámara y los artefactos de compresión de imagen de las fotos.</font></font></p>
-              <p class="cards__item-link type-xs">
-              </p>
-            </header>
-          </div>
-          <div class="cards__item">
-            <header class="cards__item-info">
-              <img src="exerciciPixelmator/img_quick-selection-tool@2x.png" width="36" height="36">
-              <h6 class="cards__item-title type-s"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Herramienta de selección rápida</font></font></h6>
-              <p class="cards__item-description type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Realice selecciones precisas con rapidez y facilidad.</font></font></p>
-              <p class="cards__item-link type-xs">
-              </p>
-            </header>
-          </div>
-          <div class="cards__item">
-            <header class="cards__item-info">
-              <img src="exerciciPixelmator/ico_ml-crop@2x.png" width="36" height="36">
-              <h6 class="cards__item-title type-s"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Cultivo</font></font></h6>
-              <p class="cards__item-description type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Mejora la composición de tus fotos con un solo clic.</font></font></p>
-              <p class="cards__item-link type-xs">
-              </p>
-            </header>
-          </div>
-          <div class="cards__item">
-            <header class="cards__item-info">
-              <img src="exerciciPixelmator/ico_remove-background@2x.png" width="36" height="36">
-              <h6 class="cards__item-title type-s"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Eliminar fondo</font></font></h6>
-              <p class="cards__item-description type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Elimina el fondo de cualquier imagen con un solo clic.</font></font></p>
-            </header>
-          </div>
-          <div class="cards__item">
-            <header class="cards__item-info">
-              <img src="exerciciPixelmator/ico_select-subject@2x.png" width="36" height="36">
-              <h6 class="cards__item-title type-s"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Seleccionar asignatura</font></font></h6>
-              <p class="cards__item-description type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Seleccione automáticamente los sujetos de las imágenes con facilidad.</font></font></p>
-            </header>
-          </div>
-          <div class="cards__item">
-            <header class="cards__item-info">
-              <img src="exerciciPixelmator/img_select-and-mask@2x.png" width="36" height="36">
-              <h6 class="cards__item-title type-s"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Herramienta de selección y máscara</font></font></h6>
-              <p class="cards__item-description type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Realice fácilmente selecciones avanzadas de áreas de imagen complejas como cabello o pelaje.</font></font></p>
-            </header>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="pro__repair repair">
-      <div class="repair__wrapper wrapper">
-        <header class="repair__header">
-          <h2 class="repair__title type-xl"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Elimina mágicamente los objetos no deseados.</font></font></h2>
-          <p class="repair__description type-m"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Elimina pequeñas imperfecciones o incluso objetos completos de tus imágenes pintándolos con la herramienta Reparar. No importa la complejidad del fondo, la herramienta Reparar puede hacer desaparecer casi cualquier objeto sin dejar rastro.</font></font></p>
-        </header>
-        <video class="repair__video video-player" width="816" height="510" autoplay="" muted="" playsinline="" loop="">
-          <source src="/exerciciPixelmator/video_repair.mp4" type="video/mp4">
-        </video>
-      </div>
-    </section> 
-  
-    <section class="pro__select select">
-      <div class="select__wrapper wrapper">
-        <header class="select__header">
-          <h2 class="select__title type-xl"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Edita tus fotos una a una. O combina varias fotos en una sola.</font></font></h2>
-          <p class="select__description type-m"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Con una colección de herramientas de selección de precisión píxel, impulsadas por tecnología de vanguardia, Pixelmator Pro te permite seleccionar y editar con facilidad partes específicas de tus imágenes. Así, puedes aplicar ajustes de color y efectos a áreas concretas, seleccionar y copiar objetos de una imagen a otra, o concentrar todas las ediciones en un área precisa sin afectar al resto de la imagen.</font></font></p>
-        </header>
-        <div class="select__showcase showcase">
-          <figure class="select__showcase-artwork showcase__artwork">
-            <picture class="select__showcase-image showcase__image is-active">
-              <img src="/exerciciPixelmator/img-1.png" width="1280" height="769">
-            </picture>
-            <picture class="select__showcase-image showcase__image">
-              <img src="/exerciciPixelmator/img-2.png" width="1280" height="769">
-            </picture>
-            <picture class="select__showcase-image showcase__image">
-              <img src="/exerciciPixelmator/img3.png" width="1280" height="769">
-            </picture>
-            <picture class="select__showcase-image showcase__image">
-              <img src="/exerciciPixelmator/img-4.png" width="1280" height="769">
-            </picture>
-          </figure>
-          <nav class="select__showcase-nav showcase__nav">
-            <div class="select__showcase-nav-wrapper">
-              <a href="#" class="select__showcase-link showcase__link is-active"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Selección rápida</font></font></a>
-              <a href="#" class="select__showcase-link showcase__link"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Selección magnética</font></font></a>
-              <a href="#" class="select__showcase-link showcase__link"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Selección de color</font></font></a>
-              <a href="#" class="select__showcase-link showcase__link"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Selecciones básicas</font></font></a>
-            </div>
-          </nav>
-          <div class="select__showcase-description showcase__description">
-            <p class="showcase__description-item type-xs is-active"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Gracias a su algoritmo avanzado, la herramienta Selección rápida permite seleccionar fácilmente incluso los objetos y áreas más difíciles con tan solo unas pocas pinceladas.</font></font></p>
-            <p class="showcase__description-item type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">La herramienta de selección magnética facilita las selecciones complejas. Simplemente trace los bordes de cualquier objeto y observe cómo se ajusta automáticamente una selección precisa a su alrededor.</font></font></p>
-            <p class="showcase__description-item type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Utilice la herramienta de selección de color para seleccionar de forma rápida y sencilla las partes de su imagen que tengan colores similares.</font></font></p>
-            <p class="showcase__description-item type-xs"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Realice selecciones rectangulares o redondeadas, seleccione filas y columnas, dibuje selecciones a mano alzada y mucho más.</font></font></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="pro__text text">
-      <header class="text__header">
-        <h2 class="text__title type-xl">Easily design <span>great-looking text.</span></h2>
-        <div class="text__title-artwork">
-          <figure class="text__title-image">
-            <img src="/exerciciPixelmator/img_text@2x.jpg" width="2000" height="auto">
-          </figure>
-        </div>
-        <p class="text__description type-m">Using the powerful Type tools in Pixelmator Pro, you can easily design great-looking text in all your images. Effortlessly create curved text or type along shapes and paths. And use a full set of typography tools to customize text in any way you can imagine.</p>
-      </header>
-      <div class="cards">
-        <div class="cards__item">
-          <header class="cards__item-info">
-            <h6 class="cards__item-title type-s">Type on a Path</h6>
-            <p class="cards__item-description type-xs">Pixelmator Pro includes a range of intuitive and easy-to-use tools for designing curved and circular text. Use the Circular Type tool to create circular text, the Path Type tool to create path text, or type text around the edges of any default or even custom shape.</p>
-          </header>
-          <figure class="cards__item-artwork">
-            <picture class="cards__item-image">
-              <img src="/exerciciPixelmator/img_text-on-a-path@2x.jpg" width="516" height="350" alt="">
-            </picture>
-          </figure>
-        </div>
-        <div class="cards__item">
-          <header class="cards__item-info">
-            <h6 class="cards__item-title type-s">Typography Features</h6>
-            <p class="cards__item-description type-xs">Customize font face, size, and color, adjust emphasis, customize alignment, perfect spacing, add subscript and superscript text, take advantage of advanced typography features such as ligatures, glyphs, and more.</p>
-          </header>
-          <figure class="cards__item-artwork">
-            <video width="333" height="70" autoplay="" muted="" playsinline="" loop="">
-              <source src="/cdn-web-assets/pro/2.0/video_text-advanced.mov" type="video/mp4">
-            </video>
-          </figure>
-        </div>
-        <div class="cards__item">
-          <header class="cards__item-info">
-            <h6 class="cards__item-title type-s">SVG Fonts</h6>
-            <p class="cards__item-description type-xs">Use multicolored or even textured SVG fonts in your designs.</p>
-          </header>
-          <figure class="cards__item-artwork">
-            <img src="/cdn-web-assets/pro/2.0/img_text-svg-fonts.jpg" srcset="/cdn-web-assets/pro/2.0/img_text-svg-fonts@2x.jpg 2x" class="cards__item-image" width="333" height="113">
-          </figure>
-        </div>
-      </div>
-    </section>
-    
-
-    <section class="pro__effects effects">
-      <header class="effects__header">
-        <h2 class="effects__title type-xl">Real-time, nondestructive, blockbuster effects.</h2>
-        <p class="effects__description type-m">Pixelmator Pro comes with a collection of over 60 versatile effects that you can mix and combine to develop any artistic or special effects you can imagine. Effects are nondestructive, so you can always edit, rearrange, or remove an effect after applying it. And you can even apply multiple effects to a single layer — seeing all your changes in real time.</p>
-      </header>
-      <div class="effects__columns">
-        <picture class="effects__artwork">
-          <source type="image/webp" srcset="/cdn-web-assets/pro/2.4/artwork/img_effects.webp 1x, /cdn-web-assets/pro/2.4/artwork/img_effects@2x.webp 2x">
-          <img src="/cdn-web-assets/pro/2.4/artwork/img_effects.jpg" srcset="/cdn-web-assets/pro/2.4/artwork/img_effects@2x.jpg 2x" class="effects__image" width="1280" height="769">
-        </picture>
-        <div class="effects__info cards">
-          <div class="effects__row cards__item">
-            <header class="cards__item-info">
-              <h6 class="cards__item-title type-s">Over 60 Effects</h6>
-              <p class="cards__item-description type-xs">Choose from over 60 effects, carefully arranged into ten groups — Blur, Distortion, Sharpen, Color Adjustments, Tile, Stylize, Halftone, Generator, Fill, and Others.</p>
-            </header>
-          </div>
-          <div class="effects__row cards__item">
-            <header class="cards__item-info">
-              <h6 class="cards__item-title type-s">Effects Browser</h6>
-              <p class="cards__item-description type-xs">The effects browser makes it incredibly easy to find just the effect you need. Browse effects, search for them by name, see instant previews, and quickly apply effects to your currently selected object.</p>
+              <h6 class="cards__item-title type-s">Type on a Path</h6>
+              <p class="cards__item-description type-xs">Pixelmator Pro includes a range of intuitive and easy-to-use tools for designing curved and circular text. Use the Circular Type tool to create circular text, the Path Type tool to create path text, or type text around the edges of any default or even custom shape.</p>
             </header>
             <figure class="cards__item-artwork">
-              <img src="/cdn-web-assets/pro/2.4/artwork/img_effects-browser.jpg" srcset="/cdn-web-assets/pro/2.4/artwork/img_effects-browser@2x.jpg 2x" class="cards__item-image" width="560" height="240">
+              <picture class="cards__item-image">
+                <img src="/exerciciPixelmator/img_text-on-a-path@2x.jpg" width="516" height="350" alt="">
+              </picture>
+            </figure>
+          </div>
+          <div class="cards__item">
+            <header class="cards__item-info">
+              <h6 class="cards__item-title type-s">Typography Features</h6>
+              <p class="cards__item-description type-xs">Customize font face, size, and color, adjust emphasis, customize alignment, perfect spacing, add subscript and superscript text, take advantage of advanced typography features such as ligatures, glyphs, and more.</p>
+            </header>
+            <figure class="cards__item-artwork">
+              <video width="333" height="70" autoplay="" muted="" playsinline="" loop="">
+                <source src="/cdn-web-assets/pro/2.0/video_text-advanced.mov" type="video/mp4">
+              </video>
+            </figure>
+          </div>
+          <div class="cards__item">
+            <header class="cards__item-info">
+              <h6 class="cards__item-title type-s">SVG Fonts</h6>
+              <p class="cards__item-description type-xs">Use multicolored or even textured SVG fonts in your designs.</p>
+            </header>
+            <figure class="cards__item-artwork">
+              <img src="/cdn-web-assets/pro/2.0/img_text-svg-fonts.jpg" srcset="/cdn-web-assets/pro/2.0/img_text-svg-fonts@2x.jpg 2x" class="cards__item-image" width="333" height="113">
             </figure>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      
 
-
-    <section class="pro__photos-app photos-app">
-      <div class="paint__wrapper wrapper">
-        <header class="photos-app__header">
-          <h2 class="photos-app__title type-xl">Turn your Photos app into an image editing powerhouse.</h2>
-          <p class="photos-app__description type-m">The Pixelmator Pro editing extension makes the entire Pixelmator Pro app and all its features available right inside Photos. So you can edit using Pixelmator Pro without ever leaving Photos, keeping all your nondestructive edits saved inside your library. Your Photos app is now a full-featured, layer-based image editor.</p>
+      <section class="pro__effects effects">
+        <header class="effects__header">
+          <h2 class="effects__title type-xl">Real-time, nondestructive, blockbuster effects.</h2>
+          <p class="effects__description type-m">Pixelmator Pro comes with a collection of over 60 versatile effects that you can mix and combine to develop any artistic or special effects you can imagine. Effects are nondestructive, so you can always edit, rearrange, or remove an effect after applying it. And you can even apply multiple effects to a single layer — seeing all your changes in real time.</p>
         </header>
-        <picture class="photos-app__video video-player">
-          <source type="image/webp" srcset="/cdn-web-assets/pro/2.1/img_extension.webp 1x, /cdn-web-assets/pro/2.1/img_extension@2x.webp 2x">
-          <img src="/cdn-web-assets/pro/2.0/img_extension.jpg" srcset="/cdn-web-assets/pro/2.0/img_extension@2x.jpg 2x" class="video-player__image" width="816" height="510">
-        </picture>
-      </div>
-    </section>
-
-
-    <section class="pro__advanced advanced">
-      <div class="advanced__wrapper wrapper">
-        <header class="advanced__header">
-          <h2 class="advanced__title type-xl">Advanced features for advanced workflows.</h2>
-          <p class="advanced__description type-m">Pixelmator Pro is designed from the ground up to be easy to use for beginners. But it’s ready to progress with you as you start mastering image editing, so you’ll also find many advanced features like Export for Web, Soft Proofing, support for Adobe Photoshop files, color management, AppleScript, and more.</p>
-        </header>
-        <ul class="advanced__features">
-          <li class="advanced__item">
-            <img src="/cdn-web-assets/pro/2.0/advanced/ico_optimize-for-web.png" srcset="/cdn-web-assets/pro/2.0/advanced/ico_optimize-for-web@2x.png 2x" class="advanced__item-icon" width="59" height="59">
-            <h4 class="advanced__item-title type-s">Optimize for Web</h4>
-          </li>
-          <li class="advanced__item">
-            <img src="/cdn-web-assets/pro/2.0/advanced/ico_soft-proofing.png" srcset="/cdn-web-assets/pro/2.0/advanced/ico_soft-proofing@2x.png 2x" class="advanced__item-icon" width="59" height="59">
-            <h4 class="advanced__item-title type-s">Soft Proofing</h4>
-          </li>
-          <li class="advanced__item">
-            <img src="/cdn-web-assets/pro/2.0/advanced/ico_color-management.png" srcset="/cdn-web-assets/pro/2.0/advanced/ico_color-management@2x.png 2x" class="advanced__item-icon" width="59" height="59">
-            <h4 class="advanced__item-title type-s">Color Management</h4>
-          </li>
-          <li class="advanced__item">
-            <img src="/cdn-web-assets/pro/2.0/advanced/ico_psd.png" srcset="/cdn-web-assets/pro/2.0/advanced/ico_psd@2x.png 2x" class="advanced__item-icon" width="59" height="59">
-            <h4 class="advanced__item-title type-s">PSD Files</h4>
-          </li>
-        </ul>
-        <p class="advanced__full">
-          <a href="/pro/tech-specs/" class="advanced__full-link type-m">
-            See full tech specs
-            <svg height="10" viewBox="0 0 10 20" width="5" xmlns="http://www.w3.org/2000/svg">
-              <path d="m406.883 378.274c.014.038.033.075.045.114a2.078 2.078 0 0 1 .05.247c.007.044.02.087.024.131a2.1 2.1 0 0 1 0 .251v.131a1.967 1.967 0 0 1 -.044.239c-.01.046-.015.094-.029.14a1.794 1.794 0 0 1 -.077.195c-.023.057-.042.115-.07.169s-.064.1-.1.148a1.759 1.759 0 0 1 -.127.187c0 .007-.009.015-.014.021l-6.024 8.036a2 2 0 1 1 -3.064-2.571l5.055-6.744-5.056-6.693a2 2 0 1 1 3.064-2.571l6.024 7.973s.006.011.01.016a1.94 1.94 0 0 1 .165.241c.018.031.041.06.058.091a1.933 1.933 0 0 1 .11.249z" fill="#327cf6" fill-rule="evenodd" transform="translate(-397 -369)"></path>
-            </svg>
-          </a>
-        </p>
-      </div>
-    </section>
-
-    <section class="pro__mac-app mac-app">
-      <figure class="mac-app__artwork">
-        <img src="/cdn-web-assets/pro/2.0/img_dock.jpg" srcset="/cdn-web-assets/pro/2.0/img_dock@2x.jpg 2x" class="mac-app__artwork-image" width="2560" height="137">
-      </figure>
-      <div class="mac-app__wrapper wrapper">
-        <header class="mac-app__header">
-          <h2 class="mac-app__title type-xl">Designed and built exclusively for Mac.</h2>
-          <p class="mac-app__description type-m">From its app icon and the way it looks and feels to the technologies it supports, Pixelmator Pro has been designed to be the ultimate Mac app. Enjoy full support for every Mac feature and technology you’d expect — iCloud, Versions, Shortcuts, Sidecar, Apple Pencil, and many others.</p>
-        </header>
-        <ul class="mac-app__features">
-          <li class="mac-app__item">
-            <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_universal.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_universal@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
-            <h4 class="mac-app__item-title type-s">Universal App</h4>
-          </li>
-          <li class="mac-app__item">
-            <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_icloud-drive.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_icloud-drive@2X.png 2x" class="mac-app__item-icon" width="52" height="52">
-            <h4 class="mac-app__item-title type-s">iCloud Drive</h4>
-          </li>
-          <li class="mac-app__item">
-            <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_photos-extension.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_photos-extension@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
-            <h4 class="mac-app__item-title type-s">Photos Extension</h4>
-          </li>
-          <li class="mac-app__item">
-            <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_retina-display.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_retina-display@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
-            <h4 class="mac-app__item-title type-s">Retina Display</h4>
-          </li>
-          <li class="mac-app__item">
-            <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_light-and-dark-appearance.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_light-and-dark-appearance@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
-            <h4 class="mac-app__item-title type-s">Light and Dark Appearance</h4>
-          </li>
-          <li class="mac-app__item">
-            <img src="/cdn-web-assets/pro/2.4/mac-features/ico_universal-control.png" srcset="/cdn-web-assets/pro/2.4/mac-features/ico_universal-control@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
-            <h4 class="mac-app__item-title type-s">Universal Control</h4>
-          </li>
-          <li class="mac-app__item">
-            <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_sidecar.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_sidecar@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
-            <h4 class="mac-app__item-title type-s">Sidecar</h4>
-          </li>
-          <li class="mac-app__item">
-            <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_apple-pencil.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_apple-pencil@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
-            <h4 class="mac-app__item-title type-s">Apple Pencil</h4>
-          </li>
-          <li class="mac-app__item">
-            <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_shortcuts.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_shortcuts@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
-            <h4 class="mac-app__item-title type-s">Shortcuts</h4>
-          </li>
-          <li class="mac-app__item">
-            <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_applescript.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_applescript@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
-            <h4 class="mac-app__item-title type-s">AppleScript</h4>
-          </li>
-          <li class="mac-app__item">
-            <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_versions.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_versions@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
-            <h4 class="mac-app__item-title type-s">Versions</h4>
-          </li>
-          <li class="mac-app__item">
-            <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_facetime.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_facetime@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
-            <h4 class="mac-app__item-title type-s">FaceTime Camera</h4>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-
-    <section class="pro__mac-technologies mac-technologies">
-      <div class="mac-technologies__wrapper wrapper">
-        <header class="mac-technologies__header">
-          <h2 class="mac-technologies__title type-xl">Powered by the latest Mac technologies.</h2>
-          <p class="mac-technologies__description type-m">The Pixelmator Pro image editing engine is seriously sophisticated and incredibly powerful. It’s designed exclusively to take advantage of the full power of Mac computers, using advanced Mac graphics technologies like Metal and Core Image. Pushing the boundaries of image editing, Pixelmator Pro also includes machine learning-enhanced editing features powered by Core ML. So tools aren’t just blistering fast — they’re whip smart too.</p>
-        </header>
-        <ul class="mac-technologies__features">
-          <li class="mac-technologies__item">
-            <img src="/cdn-web-assets/pro/3.1/ico_apple-silicon.png" srcset="/cdn-web-assets/pro/3.1/ico_apple-silicon@2x.png 2x" class="mac-technologies__item-icon" width="58" height="58">
-            <h4 class="mac-technologies__item-title type-s">Apple Silicon</h4>
-            <p class="mac-technologies__item-description type-xs">Pixelmator Pro runs natively on Mac devices powered by Apple silicon, taking full advantage of its incredible performance.</p>
-          </li>
-          <li class="mac-technologies__item">
-            <img src="/cdn-web-assets/pro/2.0/mac-technologies/img_metal.png" srcset="/cdn-web-assets/pro/2.0/mac-technologies/img_metal@2x.png 2x" class="mac-technologies__item-icon" width="58" height="58">
-            <h4 class="mac-technologies__item-title type-s">Metal</h4>
-            <p class="mac-technologies__item-description type-xs">Using Metal, Pixelmator Pro harnesses the full graphics processing power of every Mac.</p>
-          </li>
-          <li class="mac-technologies__item">
-            <img src="/cdn-web-assets/pro/2.0/mac-technologies/img_coreml.png" srcset="/cdn-web-assets/pro/2.0/mac-technologies/img_coreml@2x.png 2x" class="mac-technologies__item-icon" width="58" height="58">
-            <h4 class="mac-technologies__item-title type-s">Core ML</h4>
-            <p class="mac-technologies__item-description type-xs">The groundbreaking machine learning features in Pixelmator Pro are integrated using Core ML, which brings the best possible ML processing performance on Mac.</p>
-          </li>
-          <li class="mac-technologies__item">
-            <img src="/cdn-web-assets/pro/2.0/mac-technologies/img_swift.png" srcset="/cdn-web-assets/pro/2.0/mac-technologies/img_swift@2x.png 2x" class="mac-technologies__item-icon" width="58" height="58">
-            <h4 class="mac-technologies__item-title type-s">Built with Swift</h4>
-            <p class="mac-technologies__item-description type-xs">Swift is a modern programming language built for efficiency, reliability, and top-notch performance.</p>
-          </li>
-          <li class="mac-technologies__item">
-            <img src="/cdn-web-assets/pro/2.0/mac-technologies/img_core-image.png" srcset="/cdn-web-assets/pro/2.0/mac-technologies/img_core-image@2x.png 2x" class="mac-technologies__item-icon" width="58" height="58">
-            <h4 class="mac-technologies__item-title type-s">Core Image</h4>
-            <p class="mac-technologies__item-description type-xs">Core Image greatly speeds up processing images, enabling blazing fast, nondestructive editing.</p>
-          </li>
-          <li class="mac-technologies__item">
-            <img src="/cdn-web-assets/pro/2.0/mac-technologies/img_swiftui.png" srcset="/cdn-web-assets/pro/2.0/mac-technologies/img_swiftui@2x.png 2x" class="mac-technologies__item-icon" width="58" height="58">
-            <h4 class="mac-technologies__item-title type-s">SwiftUI</h4>
-            <p class="mac-technologies__item-description type-xs">High-performance UI animations are powered by SwiftUI.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="pro__awards awards">
-      <div class="awards__wrapper wrapper">
-        <header class="awards__header">
-          <h2 class="awards__title type-xl">We know you'll love Pixelmator Pro. But don't take our word for it.</h2>
-          <p class="awards__description type-m">Pixelmator Pro has an average worldwide rating of 4.8 stars out of 5 with over 48,000 five-star ratings. It also has a Mac App of the Year award and proudly sports an Editors’ Choice badge on the Mac App Store. We think you’ll love it — and we’re not the only ones.</p>
-        </header>
-        <ul class="awards__features">
-          <li class="awards__item">
-            <img src="/exerciciPixelmator/img_app-of-the-year@2x.png" class="awards__item-icon" width="144" height="63">
-            <h4 class="awards__item-title type-s">Awarded Mac App of the Year by Apple.</h4>
-          </li>
-          <li class="awards__item">
-            <img src="/exerciciPixelmator/img_editors-choice-v1@2x.png" class="awards__item-icon" width="144" height="63">
-            <h4 class="awards__item-title type-s">Highlighted as an Editors’ Choice on the Mac App Store.</h4>
-          </li>
-          <li class="awards__item">
-            <img src="/exerciciPixelmator/img_rating@2x.png" class="awards__item-icon" width="144" height="63">
-            <h4 class="awards__item-title type-s">Rated 4.8 worldwide with over 55,500 ratings.</h4>
-          </li>
-          <li class="awards__item">
-            <img src="/exerciciPixelmator/ico_stars@2x.png" class="awards__item-icon" width="144" height="63">
-            <h4 class="awards__item-title type-s">Received over 48,000 five-star ratings worldwide.</h4>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-
-
-  <footer class="buy l-wrapper">
-    <div class="buy__wrapper wrapper">
-      <img class="buy__icon" src="/exerciciPixelmator/ico_pixelamtor-pro-2.0@2x.png" width="128" height="128" alt="">
-
-      <h2 class="buy__title">Pixelmator Pro</h2>
-      <h3 class="buy__description">Available on the Mac App Store for $49.99.</h3>
-      <a href="/pro/buy/index.html" class="buy__btn">Buy now</a>
-    </div>
-  </footer>
-  <!-- /CONTENT -->
-
-  <footer class="global-footer">
-    <div class="global-footer__wrapper l-wrapper">
-      <div class="global-footer__nav l-inner l-inner--narrow">
-        <div class="global-footer__nav-columns">
-          <div class="global-footer__nav-column">
-            <h5 class="global-footer__nav-title"><span>Pixelmator Pro</span><span class="global-footer-arrow"></span></h5>
-            <nav class="global-footer__nav-links">
-              <a href="/pro/" class="global-footer__nav-link">Overview</a>
-              <a href="/pro/buy/" class="global-footer__nav-link">Buy</a>
-              <a href="/pro/tech-specs/" class="global-footer__nav-link">Tech Specs</a>
-              <a href="https://support.pixelmator.com/pixelmator-pro-user-guide" target="_blank" class="global-footer__nav-link">User Guide</a>
-            </nav>
-          </div>
-          <div class="global-footer__nav-column">
-            <h5 class="global-footer__nav-title"><span>Photomator</span><span class="global-footer-arrow"></span></h5>
-            <nav class="global-footer__nav-links">
-              <a href="/photomator/" class="global-footer__nav-link">Overview</a>
-              <a href="/photomator/buy/" class="global-footer__nav-link">Buy</a>
-              <a href="https://support.pixelmator.com/photomator-user-guide" target="_blank" class="global-footer__nav-link">User Guide</a>
-            </nav>
-          </div>
-          <div class="global-footer__nav-column">
-            <h5 class="global-footer__nav-title"><span>Pixelmator for iOS</span><span class="global-footer-arrow"></span></h5>
-            <nav class="global-footer__nav-links">
-              <a href="/ios/" class="global-footer__nav-link">Overview</a>
-              <a href="/ios//buy/" class="global-footer__nav-link">Buy</a>
-            </nav>
-          </div>
-          <div class="global-footer__nav-column">
-            <h5 class="global-footer__nav-title"><span>Pixelmator Team</span><span class="global-footer-arrow"></span></h5>
-            <nav class="global-footer__nav-links">
-              <a href="/blog/" class="global-footer__nav-link">Blog</a>
-              <a href="https://support.pixelmator.com/" target="_blank" class="global-footer__nav-link">Support</a>
-              <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" class="global-footer__nav-link">Privacy Policy</a>
-            </nav>
+        <div class="effects__columns">
+          <picture class="effects__artwork">
+            <source type="image/webp" srcset="/cdn-web-assets/pro/2.4/artwork/img_effects.webp 1x, /cdn-web-assets/pro/2.4/artwork/img_effects@2x.webp 2x">
+            <img src="/cdn-web-assets/pro/2.4/artwork/img_effects.jpg" srcset="/cdn-web-assets/pro/2.4/artwork/img_effects@2x.jpg 2x" class="effects__image" width="1280" height="769">
+          </picture>
+          <div class="effects__info cards">
+            <div class="effects__row cards__item">
+              <header class="cards__item-info">
+                <h6 class="cards__item-title type-s">Over 60 Effects</h6>
+                <p class="cards__item-description type-xs">Choose from over 60 effects, carefully arranged into ten groups — Blur, Distortion, Sharpen, Color Adjustments, Tile, Stylize, Halftone, Generator, Fill, and Others.</p>
+              </header>
+            </div>
+            <div class="effects__row cards__item">
+              <header class="cards__item-info">
+                <h6 class="cards__item-title type-s">Effects Browser</h6>
+                <p class="cards__item-description type-xs">The effects browser makes it incredibly easy to find just the effect you need. Browse effects, search for them by name, see instant previews, and quickly apply effects to your currently selected object.</p>
+              </header>
+              <figure class="cards__item-artwork">
+                <img src="/cdn-web-assets/pro/2.4/artwork/img_effects-browser.jpg" srcset="/cdn-web-assets/pro/2.4/artwork/img_effects-browser@2x.jpg 2x" class="cards__item-image" width="560" height="240">
+              </figure>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="global-footer__copyright l-inner l-inner--narrow">
-        <p class="global-footer__copyright-text">
+      </section>
 
-          Corporate Address: Apple Inc., One Apple Park Way, Cupertino, CA 95014<br>
-          Contact Email: info@pixelmator.com<br>
-          Data about the company is registered with Secretary of State of the State of California under entity number 0806592.<br>
-          Copyright © 2025 Apple Inc. All rights reserved.<br>
 
-      </p>
+      <section class="pro__photos-app photos-app">
+        <div class="paint__wrapper wrapper">
+          <header class="photos-app__header">
+            <h2 class="photos-app__title type-xl">Turn your Photos app into an image editing powerhouse.</h2>
+            <p class="photos-app__description type-m">The Pixelmator Pro editing extension makes the entire Pixelmator Pro app and all its features available right inside Photos. So you can edit using Pixelmator Pro without ever leaving Photos, keeping all your nondestructive edits saved inside your library. Your Photos app is now a full-featured, layer-based image editor.</p>
+          </header>
+          <picture class="photos-app__video video-player">
+            <source type="image/webp" srcset="/cdn-web-assets/pro/2.1/img_extension.webp 1x, /cdn-web-assets/pro/2.1/img_extension@2x.webp 2x">
+            <img src="/cdn-web-assets/pro/2.0/img_extension.jpg" srcset="/cdn-web-assets/pro/2.0/img_extension@2x.jpg 2x" class="video-player__image" width="816" height="510">
+          </picture>
+        </div>
+      </section>
+
+
+      <section class="pro__advanced advanced">
+        <div class="advanced__wrapper wrapper">
+          <header class="advanced__header">
+            <h2 class="advanced__title type-xl">Advanced features for advanced workflows.</h2>
+            <p class="advanced__description type-m">Pixelmator Pro is designed from the ground up to be easy to use for beginners. But it’s ready to progress with you as you start mastering image editing, so you’ll also find many advanced features like Export for Web, Soft Proofing, support for Adobe Photoshop files, color management, AppleScript, and more.</p>
+          </header>
+          <ul class="advanced__features">
+            <li class="advanced__item">
+              <img src="/cdn-web-assets/pro/2.0/advanced/ico_optimize-for-web.png" srcset="/cdn-web-assets/pro/2.0/advanced/ico_optimize-for-web@2x.png 2x" class="advanced__item-icon" width="59" height="59">
+              <h4 class="advanced__item-title type-s">Optimize for Web</h4>
+            </li>
+            <li class="advanced__item">
+              <img src="/cdn-web-assets/pro/2.0/advanced/ico_soft-proofing.png" srcset="/cdn-web-assets/pro/2.0/advanced/ico_soft-proofing@2x.png 2x" class="advanced__item-icon" width="59" height="59">
+              <h4 class="advanced__item-title type-s">Soft Proofing</h4>
+            </li>
+            <li class="advanced__item">
+              <img src="/cdn-web-assets/pro/2.0/advanced/ico_color-management.png" srcset="/cdn-web-assets/pro/2.0/advanced/ico_color-management@2x.png 2x" class="advanced__item-icon" width="59" height="59">
+              <h4 class="advanced__item-title type-s">Color Management</h4>
+            </li>
+            <li class="advanced__item">
+              <img src="/cdn-web-assets/pro/2.0/advanced/ico_psd.png" srcset="/cdn-web-assets/pro/2.0/advanced/ico_psd@2x.png 2x" class="advanced__item-icon" width="59" height="59">
+              <h4 class="advanced__item-title type-s">PSD Files</h4>
+            </li>
+          </ul>
+          <p class="advanced__full">
+            <a href="/pro/tech-specs/" class="advanced__full-link type-m">
+              See full tech specs
+              <svg height="10" viewBox="0 0 10 20" width="5" xmlns="http://www.w3.org/2000/svg">
+                <path d="m406.883 378.274c.014.038.033.075.045.114a2.078 2.078 0 0 1 .05.247c.007.044.02.087.024.131a2.1 2.1 0 0 1 0 .251v.131a1.967 1.967 0 0 1 -.044.239c-.01.046-.015.094-.029.14a1.794 1.794 0 0 1 -.077.195c-.023.057-.042.115-.07.169s-.064.1-.1.148a1.759 1.759 0 0 1 -.127.187c0 .007-.009.015-.014.021l-6.024 8.036a2 2 0 1 1 -3.064-2.571l5.055-6.744-5.056-6.693a2 2 0 1 1 3.064-2.571l6.024 7.973s.006.011.01.016a1.94 1.94 0 0 1 .165.241c.018.031.041.06.058.091a1.933 1.933 0 0 1 .11.249z" fill="#327cf6" fill-rule="evenodd" transform="translate(-397 -369)"></path>
+              </svg>
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <section class="pro__mac-app mac-app">
+        <figure class="mac-app__artwork">
+          <img src="/cdn-web-assets/pro/2.0/img_dock.jpg" srcset="/cdn-web-assets/pro/2.0/img_dock@2x.jpg 2x" class="mac-app__artwork-image" width="2560" height="137">
+        </figure>
+        <div class="mac-app__wrapper wrapper">
+          <header class="mac-app__header">
+            <h2 class="mac-app__title type-xl">Designed and built exclusively for Mac.</h2>
+            <p class="mac-app__description type-m">From its app icon and the way it looks and feels to the technologies it supports, Pixelmator Pro has been designed to be the ultimate Mac app. Enjoy full support for every Mac feature and technology you’d expect — iCloud, Versions, Shortcuts, Sidecar, Apple Pencil, and many others.</p>
+          </header>
+          <ul class="mac-app__features">
+            <li class="mac-app__item">
+              <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_universal.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_universal@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
+              <h4 class="mac-app__item-title type-s">Universal App</h4>
+            </li>
+            <li class="mac-app__item">
+              <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_icloud-drive.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_icloud-drive@2X.png 2x" class="mac-app__item-icon" width="52" height="52">
+              <h4 class="mac-app__item-title type-s">iCloud Drive</h4>
+            </li>
+            <li class="mac-app__item">
+              <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_photos-extension.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_photos-extension@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
+              <h4 class="mac-app__item-title type-s">Photos Extension</h4>
+            </li>
+            <li class="mac-app__item">
+              <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_retina-display.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_retina-display@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
+              <h4 class="mac-app__item-title type-s">Retina Display</h4>
+            </li>
+            <li class="mac-app__item">
+              <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_light-and-dark-appearance.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_light-and-dark-appearance@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
+              <h4 class="mac-app__item-title type-s">Light and Dark Appearance</h4>
+            </li>
+            <li class="mac-app__item">
+              <img src="/cdn-web-assets/pro/2.4/mac-features/ico_universal-control.png" srcset="/cdn-web-assets/pro/2.4/mac-features/ico_universal-control@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
+              <h4 class="mac-app__item-title type-s">Universal Control</h4>
+            </li>
+            <li class="mac-app__item">
+              <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_sidecar.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_sidecar@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
+              <h4 class="mac-app__item-title type-s">Sidecar</h4>
+            </li>
+            <li class="mac-app__item">
+              <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_apple-pencil.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_apple-pencil@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
+              <h4 class="mac-app__item-title type-s">Apple Pencil</h4>
+            </li>
+            <li class="mac-app__item">
+              <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_shortcuts.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_shortcuts@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
+              <h4 class="mac-app__item-title type-s">Shortcuts</h4>
+            </li>
+            <li class="mac-app__item">
+              <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_applescript.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_applescript@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
+              <h4 class="mac-app__item-title type-s">AppleScript</h4>
+            </li>
+            <li class="mac-app__item">
+              <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_versions.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_versions@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
+              <h4 class="mac-app__item-title type-s">Versions</h4>
+            </li>
+            <li class="mac-app__item">
+              <img src="/cdn-web-assets/pro/2.0/mac-apps/ico_facetime.png" srcset="/cdn-web-assets/pro/2.0/mac-apps/ico_facetime@2x.png 2x" class="mac-app__item-icon" width="52" height="52">
+              <h4 class="mac-app__item-title type-s">FaceTime Camera</h4>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section class="pro__mac-technologies mac-technologies">
+        <div class="mac-technologies__wrapper wrapper">
+          <header class="mac-technologies__header">
+            <h2 class="mac-technologies__title type-xl">Powered by the latest Mac technologies.</h2>
+            <p class="mac-technologies__description type-m">The Pixelmator Pro image editing engine is seriously sophisticated and incredibly powerful. It’s designed exclusively to take advantage of the full power of Mac computers, using advanced Mac graphics technologies like Metal and Core Image. Pushing the boundaries of image editing, Pixelmator Pro also includes machine learning-enhanced editing features powered by Core ML. So tools aren’t just blistering fast — they’re whip smart too.</p>
+          </header>
+          <ul class="mac-technologies__features">
+            <li class="mac-technologies__item">
+              <img src="/cdn-web-assets/pro/3.1/ico_apple-silicon.png" srcset="/cdn-web-assets/pro/3.1/ico_apple-silicon@2x.png 2x" class="mac-technologies__item-icon" width="58" height="58">
+              <h4 class="mac-technologies__item-title type-s">Apple Silicon</h4>
+              <p class="mac-technologies__item-description type-xs">Pixelmator Pro runs natively on Mac devices powered by Apple silicon, taking full advantage of its incredible performance.</p>
+            </li>
+            <li class="mac-technologies__item">
+              <img src="/cdn-web-assets/pro/2.0/mac-technologies/img_metal.png" srcset="/cdn-web-assets/pro/2.0/mac-technologies/img_metal@2x.png 2x" class="mac-technologies__item-icon" width="58" height="58">
+              <h4 class="mac-technologies__item-title type-s">Metal</h4>
+              <p class="mac-technologies__item-description type-xs">Using Metal, Pixelmator Pro harnesses the full graphics processing power of every Mac.</p>
+            </li>
+            <li class="mac-technologies__item">
+              <img src="/cdn-web-assets/pro/2.0/mac-technologies/img_coreml.png" srcset="/cdn-web-assets/pro/2.0/mac-technologies/img_coreml@2x.png 2x" class="mac-technologies__item-icon" width="58" height="58">
+              <h4 class="mac-technologies__item-title type-s">Core ML</h4>
+              <p class="mac-technologies__item-description type-xs">The groundbreaking machine learning features in Pixelmator Pro are integrated using Core ML, which brings the best possible ML processing performance on Mac.</p>
+            </li>
+            <li class="mac-technologies__item">
+              <img src="/cdn-web-assets/pro/2.0/mac-technologies/img_swift.png" srcset="/cdn-web-assets/pro/2.0/mac-technologies/img_swift@2x.png 2x" class="mac-technologies__item-icon" width="58" height="58">
+              <h4 class="mac-technologies__item-title type-s">Built with Swift</h4>
+              <p class="mac-technologies__item-description type-xs">Swift is a modern programming language built for efficiency, reliability, and top-notch performance.</p>
+            </li>
+            <li class="mac-technologies__item">
+              <img src="/cdn-web-assets/pro/2.0/mac-technologies/img_core-image.png" srcset="/cdn-web-assets/pro/2.0/mac-technologies/img_core-image@2x.png 2x" class="mac-technologies__item-icon" width="58" height="58">
+              <h4 class="mac-technologies__item-title type-s">Core Image</h4>
+              <p class="mac-technologies__item-description type-xs">Core Image greatly speeds up processing images, enabling blazing fast, nondestructive editing.</p>
+            </li>
+            <li class="mac-technologies__item">
+              <img src="/cdn-web-assets/pro/2.0/mac-technologies/img_swiftui.png" srcset="/cdn-web-assets/pro/2.0/mac-technologies/img_swiftui@2x.png 2x" class="mac-technologies__item-icon" width="58" height="58">
+              <h4 class="mac-technologies__item-title type-s">SwiftUI</h4>
+              <p class="mac-technologies__item-description type-xs">High-performance UI animations are powered by SwiftUI.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="pro__awards awards">
+        <div class="awards__wrapper wrapper">
+          <header class="awards__header">
+            <h2 class="awards__title type-xl">We know you'll love Pixelmator Pro. But don't take our word for it.</h2>
+            <p class="awards__description type-m">Pixelmator Pro has an average worldwide rating of 4.8 stars out of 5 with over 48,000 five-star ratings. It also has a Mac App of the Year award and proudly sports an Editors’ Choice badge on the Mac App Store. We think you’ll love it — and we’re not the only ones.</p>
+          </header>
+          <ul class="awards__features">
+            <li class="awards__item">
+              <img src="/exerciciPixelmator/img_app-of-the-year@2x.png" class="awards__item-icon" width="144" height="63">
+              <h4 class="awards__item-title type-s">Awarded Mac App of the Year by Apple.</h4>
+            </li>
+            <li class="awards__item">
+              <img src="/exerciciPixelmator/img_editors-choice-v1@2x.png" class="awards__item-icon" width="144" height="63">
+              <h4 class="awards__item-title type-s">Highlighted as an Editors’ Choice on the Mac App Store.</h4>
+            </li>
+            <li class="awards__item">
+              <img src="/exerciciPixelmator/img_rating@2x.png" class="awards__item-icon" width="144" height="63">
+              <h4 class="awards__item-title type-s">Rated 4.8 worldwide with over 55,500 ratings.</h4>
+            </li>
+            <li class="awards__item">
+              <img src="/exerciciPixelmator/ico_stars@2x.png" class="awards__item-icon" width="144" height="63">
+              <h4 class="awards__item-title type-s">Received over 48,000 five-star ratings worldwide.</h4>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+
+    <footer class="buy l-wrapper">
+      <div class="buy__wrapper wrapper">
+        <img class="buy__icon" src="/exerciciPixelmator/ico_pixelamtor-pro-2.0@2x.png" width="128" height="128" alt="">
+
+        <h2 class="buy__title">Pixelmator Pro</h2>
+        <h3 class="buy__description">Available on the Mac App Store for $49.99.</h3>
+        <a href="/pro/buy/index.html" class="buy__btn">Buy now</a>
       </div>
-    </div>
-  </footer>
-  
+    </footer>
+    <!-- /CONTENT -->
+
+    <footer class="global-footer">
+      <div class="global-footer__wrapper l-wrapper">
+        <div class="global-footer__nav l-inner l-inner--narrow">
+          <div class="global-footer__nav-columns">
+            <div class="global-footer__nav-column">
+              <h5 class="global-footer__nav-title"><span>Pixelmator Pro</span><span class="global-footer-arrow"></span></h5>
+              <nav class="global-footer__nav-links">
+                <a href="/pro/" class="global-footer__nav-link">Overview</a>
+                <a href="/pro/buy/" class="global-footer__nav-link">Buy</a>
+                <a href="/pro/tech-specs/" class="global-footer__nav-link">Tech Specs</a>
+                <a href="https://support.pixelmator.com/pixelmator-pro-user-guide" target="_blank" class="global-footer__nav-link">User Guide</a>
+              </nav>
+            </div>
+            <div class="global-footer__nav-column">
+              <h5 class="global-footer__nav-title"><span>Photomator</span><span class="global-footer-arrow"></span></h5>
+              <nav class="global-footer__nav-links">
+                <a href="/photomator/" class="global-footer__nav-link">Overview</a>
+                <a href="/photomator/buy/" class="global-footer__nav-link">Buy</a>
+                <a href="https://support.pixelmator.com/photomator-user-guide" target="_blank" class="global-footer__nav-link">User Guide</a>
+              </nav>
+            </div>
+            <div class="global-footer__nav-column">
+              <h5 class="global-footer__nav-title"><span>Pixelmator for iOS</span><span class="global-footer-arrow"></span></h5>
+              <nav class="global-footer__nav-links">
+                <a href="/ios/" class="global-footer__nav-link">Overview</a>
+                <a href="/ios//buy/" class="global-footer__nav-link">Buy</a>
+              </nav>
+            </div>
+            <div class="global-footer__nav-column">
+              <h5 class="global-footer__nav-title"><span>Pixelmator Team</span><span class="global-footer-arrow"></span></h5>
+              <nav class="global-footer__nav-links">
+                <a href="/blog/" class="global-footer__nav-link">Blog</a>
+                <a href="https://support.pixelmator.com/" target="_blank" class="global-footer__nav-link">Support</a>
+                <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank" class="global-footer__nav-link">Privacy Policy</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="global-footer__copyright l-inner l-inner--narrow">
+          <p class="global-footer__copyright-text">
+
+            Corporate Address: Apple Inc., One Apple Park Way, Cupertino, CA 95014<br>
+            Contact Email: info@pixelmator.com<br>
+            Data about the company is registered with Secretary of State of the State of California under entity number 0806592.<br>
+            Copyright © 2025 Apple Inc. All rights reserved.<br>
+
+        </p>
+        </div>
+      </div>
+    </footer>
+    
