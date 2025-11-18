@@ -160,26 +160,77 @@ body {
 	border-radius: 20px
 }
 
+/* NUEVAS REGLAS PARA CARDS */
 .cards {
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 896px;
-	margin-right: auto;
-	margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 44px auto;
 }
 
 .cards__item {
-	border-radius: 20px
+    flex: 1 1 280px; /* ajustado para no agrandar tanto */
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #111; /* para mantener estilo oscuro original */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px; /* un poco más de espacio interno */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards__item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+.cards__item img {
+    width: 80%; /* reducimos tamaño de imagen */
+    max-width: 220px; /* límite máximo */
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
 }
 
 .cards__item-info {
-	box-sizing: border-box;
-	padding: 50px
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.cards__item-info h3 {
+    font-size: 22px; /* más grande */
+    font-weight: 700;
+    color: #fff; /* texto blanco */
 }
 
 .cards__item-description {
-	margin-top: 6px;
-	opacity: .77;
+    font-size: 17px; /* un poco más grande */
+    color: #ccc; /* tono claro acorde al fondo */
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .cards__item {
+        max-width: 90%;
+    }
+    .cards__item-info h3 {
+        font-size: 20px;
+    }
+    .cards__item-description {
+        font-size: 16px;
+    }
 }
 
 .tools {
@@ -233,32 +284,6 @@ body {
 	fill: currentColor
 }	
 
-.cards {
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 879px;
-	margin-right: auto;
-	margin-left: auto
-}
-
-.cards__item {
-	border-radius: 20px
-}
-
-.cards__item-info {
-    box-sizing: border-box;
-    padding: 70px;
-
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-start;
-    text-align: left;        
-}
-
-.cards__item-description {
-	margin-top: 6px;
-	opacity: .77
-}
 .draw {
 	padding: 178px 0 188px;
 	color: white;
