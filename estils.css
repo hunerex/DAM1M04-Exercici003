@@ -9,6 +9,8 @@ body {
     background: #fff;
     color: #111;
     text-align: center;
+	overflow-x: hidden;
+	
 }
 
 /* Topbar con blur tipo Apple */
